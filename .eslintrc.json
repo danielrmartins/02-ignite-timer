@@ -6,7 +6,8 @@
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier"
+    "eslint-config-prettier",
+    "plugin:react/jsx-runtime"
   ],
   "settings": {
     "react": {
@@ -14,15 +15,8 @@
     },
     "import/resolver": {
       "node": {
-        "paths": [
-          "src"
-        ],
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   },
@@ -35,7 +29,6 @@
         "ignoreRestSiblings": true,
         "argsIgnorePattern": "^_"
       }
-    ],
-    "react/react-in-jsx-scope": "off"
+    ]
   }
 }
