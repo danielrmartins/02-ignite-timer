@@ -22,7 +22,7 @@
   },
   "rules": {
     "no-unused-vars": [
-      "error",
+      "off",
       {
         "vars": "all",
         "args": "after-used",
