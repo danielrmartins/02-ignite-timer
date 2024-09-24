@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Ignite Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto faz parte da trilha do Ignite da Rocketseat, onde desenvolvemos um aplicativo de timer utilizando conceitos avançados de React, TypeScript e Styled Components.
 
-Currently, two official plugins are available:
+## 🔥 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Iniciar, pausar e resetar contagem de tempo
+- Histórico de ciclos de trabalho
+- Salvamento do estado do timer no armazenamento local
+- Responsividade para diferentes tamanhos de tela
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca JavaScript para criação de interfaces
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática
+- **Styled Components**: Biblioteca para estilização com JavaScript
+- **React Hook Form**: Gerenciamento de formulários
+- **Zod**: Validação de schemas
+- **Immer**: Manipulação de estado imutável
+- **date-fns**: Manipulação de datas de forma simples e eficiente
 
-- Configure the top-level `parserOptions` property like this:
+## 💻 Instalação e Execução
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone este repositório:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   git clone https://github.com/danielrmartins/02-ignite-timer.git
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Acesse a pasta do projeto
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   cd 02-ignite-timer
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Execute o projeto:
+
+   ```bash
+   npm run dev
+   ```
+
+## 📁 Estrutura do Projeto
+
+- **components**: Componentes reutilizáveis da aplicação
+- **contexts**: Contextos globais para gerenciamento de estado
+- **pages**: Páginas principais da aplicação
+- **styles**: Estilos globais da aplicação
+
+Feito com 💜 por Daniel Martins durante a trilha MBA Full Stack da Rocketseat.
